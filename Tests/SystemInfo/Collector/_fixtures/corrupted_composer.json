@@ -1,5 +1,5 @@
 {
-    "name": "ezsystems/ezplatform-ee",,,,,
+    "name": "se7enxweb/ezplatform-ee",,,,,
     "description": "eZ Platform Enterprise Edition distribution",
     "homepage": "https://github.com/ezsystems/ezplatform-ee",
     "license": "proprietary",
@@ -25,7 +25,7 @@
     },
     "autoload-dev": {
         "psr-4": { "Tests\\": "tests/" },
-        "files": [ "vendor/symfony/symfony/src/Symfony/Component/VarDumper/Resources/functions/dump.php" ]
+        "files": [ "vendor/se7enxweb/symfony/src/Symfony/Component/VarDumper/Resources/functions/dump.php" ]
     },
     "require": {
         "php": "^7.1.3",

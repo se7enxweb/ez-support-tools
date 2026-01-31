@@ -17,10 +17,10 @@ use eZ\Publish\API\Repository\Values\ValueObject;
  */
 class EzSystemInfo extends ValueObject implements SystemInfo
 {
-    public const PRODUCT_NAME_OSS = 'eZ Platform';
-    public const PRODUCT_NAME_ENTERPISE = 'eZ Platform Enterprise';
+    public const PRODUCT_NAME_OSS = 'Exponential Platform';
+    public const PRODUCT_NAME_ENTERPISE = 'Exponential Platform Enterprise';
     // NOTE: These are specific product names, for 3.2+ thay are all collectivly refered to by PRODUCT_NAME_ENTERPISE as well.
-    public const PRODUCT_NAME_COMMERCE = 'eZ Commerce';
+    public const PRODUCT_NAME_COMMERCE = 'Exponential Platform Commerce';
 
     /**
      * @var string

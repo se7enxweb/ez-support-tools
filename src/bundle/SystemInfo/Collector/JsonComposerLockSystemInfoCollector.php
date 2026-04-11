@@ -84,10 +84,12 @@ class JsonComposerLockSystemInfoCollector implements SystemInfoCollector
             throw new Exception\ComposerFileValidationException($this->jsonFile);
         }
 
-        $stability = InstalledVersions::isInstalled(self::IBEXA_OSS_PACKAGE)
-            ? $this->versionStabilityChecker->getStability(
-                InstalledVersions::getVersion(self::IBEXA_OSS_PACKAGE)
-            )
+        $ibexaVersion = InstalledVersions::isInstalled(self::IBEXA_OSS_PACKAGE)
+            ? InstalledVersions::getVersion(self::IBEXA_OSS_PACKAGE)
+            : null;
+
+        $stability = $ibexaVersion !== null
+            ? $this->versionStabilityChecker->getStability($ibexaVersion)
             : $this->getMinimumStability($lockData);
 
         return $this->value = new ComposerSystemInfo([

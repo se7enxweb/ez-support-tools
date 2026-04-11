@@ -15,8 +15,8 @@ use eZ\Publish\API\Repository\Values\ValueObject;
  */
 class IbexaSystemInfo extends ValueObject implements SystemInfo
 {
-    public const PRODUCT_NAME_OSS = 'Ibexa Open Source';
-    public const PRODUCT_NAME_ENTERPRISE = 'Ibexa DXP';
+    public const PRODUCT_NAME_OSS = 'Exponential Open Source';
+    public const PRODUCT_NAME_ENTERPRISE = 'Exponential DXP';
     public const PRODUCT_NAME_VARIANTS = [
         'oss' => self::PRODUCT_NAME_OSS,
         'content' => 'Ibexa Content',
